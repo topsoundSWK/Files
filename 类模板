@@ -1,0 +1,22 @@
+template <typename T> //模板类
+class MyTemplate
+{
+private：
+	T data;
+public:
+	Mytemplate(T value)
+	{
+		data = value;
+	}
+	
+	T getData()
+	{
+		return data;
+	}
+};
+
+MyTemplate <int> intTemplate(10); //实例此类
+cout << intTemplate.getData() << endl;
+
+MyTemplate <string> stringTemplate("Hello");
+cout << stringTemplate.getData() << endl;
